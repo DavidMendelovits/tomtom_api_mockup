@@ -10,7 +10,7 @@ map.on('click', (e) => {
   let INFO = axios.get(geofencingApiURL + "projects/" + geofencingProjectId + "/fences?key=" +
     apiKey)
   if (!INFO.inside) {
-    alert("This point is outside the fence! Do you have all your things")
+    alert("This point is outside the fence! Do you have all your things?")
     console.log("this point is not in a fence!");
   }
 });
